@@ -82,3 +82,24 @@ const chai =  new createUser("chai", 25)
 const Tea = new createUser("Tea", 250)
 
 Tea.printMe()
+
+
+
+// isme trim ke baare me parhte hein
+
+let myName = {
+name:"Muhammad Faiz   "
+}
+let functTrue = {
+    trueLength: function () {
+        return  console.log("this-----", this);
+    }
+}
+//  My name actual Length is 13 but i add space its increase the length why?
+// console.log("myName", myName.length);
+
+// // its solution is trim
+// console.log("myName", myName.trim().length);
+
+myName.__proto__= functTrue
+console.log("data", myName);
