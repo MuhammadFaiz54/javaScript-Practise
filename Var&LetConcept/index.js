@@ -27,18 +27,29 @@ console.log("fruit", fruit);
 // async function return proccess se ghom kar ayega tu ose last me variable 5 milega osey q ke w last he or 
 // baki cheezein phele out jo jaegi
 
-for (var i = 0; i < 5; i++) {
-    setTimeout(() => {
-        console.log("var", i);
-    }, 2000);
+// for (var i = 0; i < 5; i++) {
+//     setTimeout(() => {
+//         console.log("var", i);
+//     }, 2000);
 
-}
+// }
 // let ki waja se answer jo aye ga 1,2,3,4,5 aye ga q ke ye block  he ye call stack me roke ga  jub 
 // async function return proccess se ghom kar ayega tu ose last me variable 1,2,3,4,5 milega 
 
-for (let i = 0; i < 5; i++) {
-    setTimeout(() => {
-        console.log("let", i);
-    }, 2000);
+// for (let i = 0; i < 5; i++) {
+//     setTimeout(() => {
+//         console.log("let", i);
+//     }, 2000);
 
+// }
+for (var  a=0;   a<6 ; a++) {
+   setTimeout(() => {
+    console.log('a', a);
+   }, 2000);    
 }
+
+for (let  b=0;   b<6 ; b++) {
+    setTimeout(() => {
+     console.log('a', b);
+    }, 2000);    
+ }
